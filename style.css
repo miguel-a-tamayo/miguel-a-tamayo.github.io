@@ -1,3 +1,49 @@
-*{margin:0; padding:0; font-family: 'Courier New', Courier, monospace;}
+*{font-family: 'Courier New', Courier, monospace; font-size: 20px;}
 
-html{height: 100%; background: -webkit-linear-gradient(red, green, blue);}
+/* ------------ NAVIGATION BAR ------------ */
+
+.top-nav ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    padding-top: 50px;
+    
+}
+.top-nav ul li {
+    height: 20px;
+    display: inline;
+    flex: 0 1 auto;
+    list-style-type: none;
+    overflow: hidden; /* hide extra text*/
+}
+.top-nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Slide titles up */
+.title-container{
+    transition: all 0.3s;
+}
+.title {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    transition: transform 0.3s ease;
+}
+.title1 {
+    transform-origin: right center;
+} 
+.title2 {
+    transform-origin: left center;
+}
+.link:hover .title-container{
+    transform: translateY(-20px);
+}
+
+/* Bring in Squares*/

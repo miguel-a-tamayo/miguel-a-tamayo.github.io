@@ -1,8 +1,22 @@
-*{font-family: 'Courier New', Courier, monospace; font-size: 20px;}
+*{font-family: 'Courier New', Courier, monospace; font-size: 20px; 
+    margin:0; padding:0;}
 
-/* ------------ NAVIGATION BAR ------------ */
+/* make smooth scroll */
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Hide the scroll Bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* NAVIGATION BAR LOCATION */
 
 .top-nav ul {
+    position: fixed;
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
@@ -26,7 +40,7 @@
     color: black;
 }
 
-/* Slide titles up */
+/* NAVIGATION BAR ANIMATION */
 .title-container{
     transition: all 0.3s;
 }
@@ -43,24 +57,24 @@
 .title2 {
     transform-origin: left center;
 }
+.title2:hover{
+    text-decoration: underline;
+}
 .link:hover .title-container{
     transform: translateY(-20px);
 }
 
-/* Bring in line*/
-.title-container:before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.5s ease-in-out;
+/* editing the sections */
+
+section{
+    box-sizing:border-box;
+    height: 100vh;
+    width: 100vw;
 }
-.title-container:hover:before{
-    visibility: visible;
-    transform: scaleX(1);
-}
+
+#about-me{background: #ff7b54;}
+#interests{background: #ffca3a;}
+#personal-projects{background: #77acf1;}
+#experience{background: #ffba08;}
+#academic-life{background: #e71d36;}
+#photo-album{background:#f4acb7;}

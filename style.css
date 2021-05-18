@@ -67,14 +67,28 @@ html {
 /* editing the sections */
 
 section{
-    box-sizing:border-box;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#about-me{background: #ff7b54;}
-#interests{background: #ffca3a;}
-#personal-projects{background: #77acf1;}
-#experience{background: #ffba08;}
-#academic-life{background: #e71d36;}
-#photo-album{background:#f4acb7;}
+#about-me{
+    background: #ff7b54;
+}
+#interests{
+    background: #ffca3a;
+}
+#personal-projects{
+    background: #77acf1;
+}
+#experience{
+    background: #ffba08;
+}
+#academic-life{
+    background: #e71d36;
+}
+#photo-album{
+    background:#f4acb7;
+}

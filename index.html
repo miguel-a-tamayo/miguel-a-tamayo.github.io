@@ -2,14 +2,19 @@
 <html>
 
     <head>
-        <title>One Pager</title>
+        <title>Miguel Tamayo Portfolio</title>
         <link href="style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
+        <div class="menu-button" id="menu-button">
+            <button onclick="toggleMenu()">Menu</button>
+        </div>
+        
         <div class="top-nav">
-                <ul>
-                    <li><a href="#about-me" class="link">
+                <ul id="navigation-list">
+                    <li><a href="#about-me" class="link" onclick="test()">
                         <div class="title-container">
                             <spam class="title1 title"><b>About Me</b></spam>
                             <spam class="title2 title"><b>About Me</b></spam>
@@ -51,8 +56,14 @@
                         </div>
                     </a></li>
                 </ul>
+
+            </div>
         </div>
 
+        <!-- <div class="menu-button" id="menu-button"> -->
+            
+        <!-- </div> -->
+        
         <div class="about-me-container" id="about-me">
             <div class="headshot-item">
                 <img src="about_me_headshot.jfif" ALIGN="left" width="550" height="350">
@@ -91,4 +102,7 @@
                 <h1>PHOTO ALBUM</h1>
             </section>
 
+            <script src="functions.js"></script>
     </body>
+
+</html>

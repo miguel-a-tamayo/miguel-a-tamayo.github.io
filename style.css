@@ -17,8 +17,11 @@ h1{text-align: center; font-size: 22px;}
     display: none;
 }
 
-/* NAVIGATION BAR LOCATION */
+.menu-button{
+    display: none;
+}
 
+/* NAVIGATION BAR LOCATION */
 .top-nav ul {
     position: fixed;
     display: flex;
@@ -29,6 +32,7 @@ h1{text-align: center; font-size: 22px;}
     margin-right: 0;
     padding: 0;
     padding-top: 50px;
+    visibility: visible;
     
 }
 .top-nav ul li {
@@ -66,6 +70,24 @@ h1{text-align: center; font-size: 22px;}
 }
 .link:hover .title-container{
     transform: translateY(-20px);
+}
+
+/* RESPONSIVE NAVIGATION */
+@media only screen and (max-width:1024px) {
+    .menu-button {
+        display: flex;
+        z-index: 2;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .top-nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        align-items: center;
+    }
 }
 
 /* SECTIONS EDITING */

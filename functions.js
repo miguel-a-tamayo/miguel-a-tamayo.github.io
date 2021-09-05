@@ -19,4 +19,5 @@ function toggleMenu() {
 
 function test() {
     console.log("Hello World!")
+    menuList.style.display = "none"
 }

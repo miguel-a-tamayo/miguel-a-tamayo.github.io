@@ -79,7 +79,7 @@ h1{text-align: center; font-size: 22px;}
         justify-content: center;
     }
     .menu-button button {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.8);
         position: fixed;
         z-index: 2;
         border: none;
@@ -97,7 +97,7 @@ h1{text-align: center; font-size: 22px;}
         gap: 20px;
         padding-top: 0px;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.8);
 
             
     }
@@ -142,7 +142,7 @@ h1{text-align: center; font-size: 22px;}
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: pink;
+        /* background-color: pink; */
 
         padding-top: 0;
     }

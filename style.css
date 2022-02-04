@@ -31,7 +31,7 @@ h1{text-align: center; font-size: 22px;}
     width: 100%;
     margin-right: 0;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 30px;
     visibility: visible;
     
 }
@@ -114,7 +114,6 @@ h1{text-align: center; font-size: 22px;}
     height: 100vh;
 
     padding-top: 5vh;
-    padding-bottom: 10vh;
     padding-left: 8vw;
     padding-right: 8vw;
 
@@ -168,18 +167,29 @@ h1{text-align: center; font-size: 22px;}
     }
 }
 
+/* Personal Project section*/
 
-
-/* #interests{
-    background: #ffca3a;
-    align-items: center;
-    justify-content: center;
-}
-#personal-projects{
+.pp-container{
     background: #77acf1;
-    align-items: center;
-    justify-content: center;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
+
+.pp-container .title{
+    background-color: red;
+    padding-top: 15vh;
+}
+
+.pp-container .main {
+    background-color: coral;
+    flex: 1;
+}
+
+/*
 #experience{
     background: #ffba08;
     align-items: center;

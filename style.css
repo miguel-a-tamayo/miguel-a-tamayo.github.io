@@ -35,21 +35,15 @@ html {
     width: 100vw;
 }
 
-body {
-    @media var(--mq-medium) {
-        font-size: var(--base-font-size)*1.2;
-    }
-
-    @media var(--mq-large) {
-        font-size: var(--base-font-size)*1.3;
-    }
-
-    @media var(--mq-xlarge) {
-        font-size: var(--base-font-size)*1.4;
+@media only screen and (max-width: 1920px) {
+    p {
+        font-size: 5px;
     }
 }
 
-p {font-size: 17px;}
+p {
+    font-size: 17px; 
+}
 
 h1{text-align: center; font-size: 22px;}
 

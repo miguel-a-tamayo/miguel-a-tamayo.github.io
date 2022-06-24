@@ -15,7 +15,12 @@ p {
 
 h1{text-align: center; font-size: 22px;}
 
-h3{font-size: 17px;}
+h3{
+    font-size: 17px;
+    transition: 0.3s;
+    text-shadow: 0 0 0;
+    transform: text-shadow;
+}
 
 /* Responsive paragraph font */
 /* @media only screen and (min-width: 1920px) {
@@ -184,8 +189,8 @@ h3{font-size: 17px;}
     }
 }
 
-/* Personal Project section*/
-
+/* Personal Project section */
+/* set up of the big page */
 .pp-container{
     /* background: #77acf1; */
 
@@ -198,11 +203,13 @@ h3{font-size: 17px;}
     row-gap: 7vh;
 }
 
+/* title container*/
 .pp-container .title{
     /* background-color: red; */
     padding-top: 15vh;
 }
 
+/* main page where project cards go */
 .pp-container .main {
     /* background-color: coral; */
     flex: 1;
@@ -217,14 +224,20 @@ h3{font-size: 17px;}
     gap: 1vw;
 }
 
+/* controls the image of the cards */
 .pp-container .main img {
     width: 215px;
     height: 215px;
 
     border-radius: 15%;
+
+    transition: 0.3s;
+    box-shadow: 0 0 0;
+    transform: box-shadow;
 }
 
-.pp-container .main .project {
+/* controls the project card div*/
+.project {
     /* background-color: chartreuse; */
 
     min-width: 14vw;
@@ -236,9 +249,28 @@ h3{font-size: 17px;}
     text-align: center;
 
     border-radius: 15%;
+
+    transition: 0.3s;
+    transform: scale(1);
     /* overflow: hidden; */
 
 }
+
+/* control project hover style*/
+.project:hover h3{
+    text-shadow: 0px 0px 5px gray;
+    transform: text-shadow;
+}
+
+.project:hover img{
+    box-shadow: 0px 0px 10px gray;
+    transform: box-shadow;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
 
 /*
 #experience{

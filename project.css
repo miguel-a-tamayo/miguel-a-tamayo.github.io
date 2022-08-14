@@ -1,0 +1,27 @@
+*{font-family: 'Courier New', Courier, monospace;}
+
+body {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+p {
+    text-indent: 30px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1, h2, h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.git-hub {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

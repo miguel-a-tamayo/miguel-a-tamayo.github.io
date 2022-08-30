@@ -29,17 +29,6 @@ a {
     color: black;
 }
 
-/* Responsive paragraph font */
-/* @media only screen and (min-width: 1920px) {
-    p {
-        font-size: ;
-    }
-} */
-
-
-
-
-
 /* Hide the scroll Bar */
 ::-webkit-scrollbar {
     display: none;
@@ -239,7 +228,7 @@ a {
     min-width: 14vw;
     max-width: 14vw;
 
-    min-height: fit-content;
+    min-height: 35vh;
     max-height: 35vh;
 
     text-align: center;
@@ -254,10 +243,10 @@ a {
 .pp-container .main img {
     background-color: blueviolet;
     display: block;
-    width: 215px;
-    height: 215px;
+    width: max-content;
+    height: max-content;
 
-    object-position: 0 0;
+    object-position: center;
 
     object-fit: cover;
 
